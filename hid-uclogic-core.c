@@ -24,6 +24,7 @@
 
 #include "compat.h"
 #include <linux/version.h>
+#include <asm/unaligned.h>
 
 /* Driver data */
 struct uclogic_drvdata {
