@@ -1096,18 +1096,18 @@ static int uclogic_params_init_ugee_xppen_pro(struct hid_device *hdev,
 	);
 
 	p->pen.desc_ptr = uclogic_rdesc_template_apply(
-		uclogic_rdesc_xppen_a156p_pen_arr,
-		uclogic_rdesc_xppen_a156p_pen_size,
+		uclogic_rdesc_xppen_a22rp_pen_arr,
+		uclogic_rdesc_xppen_a22rp_pen_size,
 		desc_params,
 		ARRAY_SIZE(desc_params)
 	);
-	p->pen.desc_size = uclogic_rdesc_xppen_a156p_pen_size;
+	p->pen.desc_size = uclogic_rdesc_xppen_a22rp_pen_size;
 	p->pen.id = 0x02;
 
 	rc = uclogic_params_frame_init_with_desc(
 		&p->frame_list[0],
-		uclogic_rdesc_xppen_a156p_frame_arr,
-		uclogic_rdesc_xppen_a156p_frame_size,
+		uclogic_rdesc_xppen_a22rp_frame_arr,
+		uclogic_rdesc_xppen_a22rp_frame_size,
 		UCLOGIC_RDESC_V1_FRAME_ID
 	);
 	if (rc < 0) {
